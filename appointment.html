@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Appointment - Lotus Life Hospital</title>
+    <link rel="stylesheet" href="myproject_style.css">
+    <header>
+    <h1>Book Your Appointment</h1>
+</header>
+<div class="navbar">
+    <a href="myproject_index.html">Home</a>
+    <a href="appointment.html">Book Appointment</a>
+    <a href="patients.html">Patients</a>
+    <a href="staff.html">Staff</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://www.mohfw.gov.in/?q=en/pressrelease-190">Achievements in Healthcare</a>
+</div>
+
+</head>
+<body>
+
+
+<!-- CENTERED CONTAINER -->
+<div class="container">
+
+    <h2>Fill Your Basic Health Details</h2>
+
+    <form>
+
+        <!-- PERSONAL INFORMATION -->
+        <fieldset class="form-box">
+            <legend>Personal Information</legend>
+
+            <label>Full Name:</label><br>
+            <input type="text" name="name" placeholder="Your Name" required><br><br>
+
+            <label>Age:</label><br>
+            <input type="number" name="age" min="1" max="120" required><br><br>
+
+            <label>Gender:</label><br>
+            <div class="option-group">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div><br>
+
+            <label>Address:</label><br>
+            <textarea name="address" rows="3" placeholder="Enter your address"></textarea><br>
+        </fieldset>
+
+        <!-- PHYSICAL STATS -->
+        <fieldset class="form-box">
+            <legend>Physical Stats</legend>
+
+            <label>Height (cm):</label><br>
+            <input type="number" name="height" required><br><br>
+
+            <label>Weight (kg):</label><br>
+            <input type="number" name="weight" required><br><br>
+
+            <label>BMI Category:</label><br>
+            <input list="bmi">
+            <datalist id="bmi">
+                <option>Underweight</option>
+                <option>Healthy</option>
+                <option>Overweight</option>
+                <option>Obese</option>
+            </datalist> 
+        </fieldset>
+
+        <!-- MEDICAL DETAILS -->
+        <fieldset class="form-box">
+            <legend>Medical Information</legend>
+
+            <label>Existing Illness:</label><br>
+            <input type="text" name="illness" placeholder="e.g., BP, Asthma"><br><br>
+
+            <label>Exercise Routine:</label><br>
+            <select>
+                <option>Daily</option>
+                <option>Weekly</option>
+                <option>Rarely</option>
+            </select><br><br>
+
+            <label>Previous Medical Conditions:</label><br>
+            <div class="option-group">
+                <label><input type="checkbox" name="condition" value="Diabetes"> Diabetes</label>
+                <label><input type="checkbox" name="condition" value="BP"> High Blood Pressure</label>
+                <label><input type="checkbox" name="condition" value="Asthma"> Asthma</label>
+                <label><input type="checkbox" name="condition" value="Heart"> Heart Issues</label>
+                <label><input type="checkbox" name="condition" value="None"> None</label>
+            </div><br>
+
+            <label>Smoking:</label><br>
+            <div class="option-group">
+                <label><input type="radio" name="smoke"> Yes</label>
+                <label><input type="radio" name="smoke"> No</label>
+            </div><br>
+
+            <label>Allergies:</label><br>
+            <textarea name="allergy" placeholder="Describe any allergies"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <h2>Hospital Rules & Regulations</h2>
+    <ul>
+        <li>Maintain silence inside hospital premises.</li>
+        <li>Do not litter; use dustbins.</li>
+        <li>Respect hospital staff at all times.</li>
+        <li>Follow appointment timings strictly.</li>
+        <li>Emergency cases will be prioritized.</li>
+        <li>No smoking on hospital grounds.</li>
+    </ul>
+
+</div> <!-- container -->
+
+<footer>
+    © 2025 Lotus Life Hospital | All Rights Reserved
+</footer>
+
+</body>
+</html>
